@@ -30,7 +30,7 @@ func NewServer(assets string, tagbox *tagbox.Client) *Server {
 	}
 	srv.router.Handle(http.MethodGet, "/assets/", Static("/assets/", assets))
 
-	srv.router.HandleFunc(http.MethodPost, "/webFaceID", srv.handlewebFaceID)
+	srv.router.HandleFunc(http.MethodPost, "/imgtag", srv.handlewebFaceID)
 	srv.router.HandleFunc(http.MethodGet, "/", srv.handleIndex)
 	return srv
 }
