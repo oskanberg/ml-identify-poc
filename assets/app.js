@@ -20,7 +20,7 @@ $(function() {
     var dataURL = canvas.toDataURL();
     $.ajax({
       type: "POST",
-      url: "/webFaceID",
+      url: "/imgtag",
       data: {
         imgBase64: dataURL
       },
