@@ -1,0 +1,16 @@
+version: '2'
+services:
+    mb:
+        image: machinebox/tagbox
+        ports:
+         - "9010:8080"
+        environment:
+         - MB_KEY=${MB_KEY}
+    app:
+        build: .
+        ports:
+         - "9012:8080"
+        environment:
+         - MB_KEY=${MB_KEY}
+        depends_on:
+         - mb

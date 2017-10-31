@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Web Face ID by Machine Box</title>
+		<link rel='stylesheet' href='https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css'>
+		<link rel='stylesheet' href='/assets/app.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src='https://cdn.temasys.io/adapterjs/0.15.x/adapter.min.js' crossorigin='anonymous'></script>
+	</head>
+	<body>
+		<div class='options'>
+			<button id="snap" class="ui teal massive circular icon button" style="width: 50%">
+				<i class='camera icon'></i>
+			</button>
+			<div class='ui info message' style='display:none'></div>
+		</div>
+		<video id="video" width="100%" autoplay></video>
+		<canvas id="canvas" width="400" height="225" style="display:none;"></canvas>
+		<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
+		<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+		<script src='/assets/arg.js'></script>
+		<script src='/assets/app.js'></script>
+	</body>
+</html>
