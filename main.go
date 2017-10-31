@@ -23,7 +23,7 @@ func main() {
 	boxutil.WaitForReady(context.Background(), tagbox)
 	fmt.Println("Done!")
 
-	fmt.Println("Go to:", *addr+"...")
+	fmt.Println("Go to:", *addr+" or :9012 ...")
 
 	srv := NewServer("./assets", tagbox)
 	if err := http.ListenAndServe(*addr, srv); err != nil {
